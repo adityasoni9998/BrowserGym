@@ -151,7 +151,7 @@ def click(
     add_demo_mode_effects(page, elem, bid, demo_mode=demo_mode, move_cursor=True)
 
     def do(force: bool):
-        elem.click(button=button, modifiers=modifiers, force=force, timeout=500)
+        elem.click(button=button, modifiers=modifiers, force=force, timeout=5000)
 
     call_fun(do, retry_with_force)
 
